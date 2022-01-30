@@ -1,0 +1,43 @@
+GET http://localhost:5000/api/products
+
+###
+POST http://localhost:5000/api/products
+Content-Type: application/json
+
+{
+    "product_id": "2",
+    "title": "product 02",
+    "images": [
+        "https://res.cloudinary.com/dz8dtz5ki/image/upload/v1621053362/avatar/btr8lq1dmq0esypqufx2.png",
+        "https://res.cloudinary.com/dz8dtz5ki/image/upload/v1621053362/avatar/btr8lq1dmq0esypqufx2.png"
+        ],
+    "description": "Hello this is a product 02",
+    "content": "welcome to product 02",
+    "colors": ["green", "orange"],
+    "sizes": ["M", "S"],
+    "price": 64
+}
+
+###
+DELETE http://localhost:5000/api/products/61f6a46eea0b7307dab69591
+
+###
+PUT http://localhost:5000/api/products/61f6a5aff0e56c0133d850f8
+Content-Type: application/json
+
+{
+    "product_id": "2",
+    "title": "product 02 Updated",
+    "images": [
+        "https://res.cloudinary.com/dz8dtz5ki/image/upload/v1621053362/avatar/btr8lq1dmq0esypqufx2.png",
+        "https://res.cloudinary.com/dz8dtz5ki/image/upload/v1621053362/avatar/btr8lq1dmq0esypqufx2.png"
+        ],
+    "description": "Hello this is a product 02",
+    "content": "welcome to product 02",
+    "colors": ["green", "orange"],
+    "sizes": ["M", "L"],
+    "price": 64
+}
+
+###
+GET http://localhost:5000/api/products/61f69f039d16adad1ae65aaa
